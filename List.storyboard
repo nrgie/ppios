@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainController" customModule="peripatos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zg7-L2-LmZ">
+                                <rect key="frame" x="0.0" y="102" width="320" height="128"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Browse by categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBc-oz-wql">
+                                <rect key="frame" x="16" y="73" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Browse by Institutions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m34-NI-eyh">
+                                <rect key="frame" x="16" y="274" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsn-p3-pd3">
+                                <rect key="frame" x="16" y="506" width="288" height="42"/>
+                                <color key="backgroundColor" red="1" green="0.88287090774513588" blue="0.13239039253322504" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="PLT-ba-gXZ"/>
+                                </constraints>
+                                <state key="normal" title="FIND NEARBY TOURS">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gL8-Sl-wfr">
+                                <rect key="frame" x="0.0" y="303" width="320" height="140"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQm-WR-ISj">
+                                <rect key="frame" x="0.0" y="20" width="320" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21306070756619247" green="0.3009387524139262" blue="0.85848270939086291" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DQm-WR-ISj" firstAttribute="leading" secondItem="zg7-L2-LmZ" secondAttribute="leading" id="84h-Zk-wHu"/>
+                            <constraint firstItem="XBc-oz-wql" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="D3M-hC-rse"/>
+                            <constraint firstItem="XBc-oz-wql" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FiI-fy-S9p"/>
+                            <constraint firstItem="m34-NI-eyh" firstAttribute="trailing" secondItem="tsn-p3-pd3" secondAttribute="trailing" id="Gsc-iN-M2j"/>
+                            <constraint firstItem="DQm-WR-ISj" firstAttribute="trailing" secondItem="zg7-L2-LmZ" secondAttribute="trailing" id="HQf-Xv-GTc"/>
+                            <constraint firstItem="zg7-L2-LmZ" firstAttribute="trailing" secondItem="gL8-Sl-wfr" secondAttribute="trailing" id="IQ5-A5-vkA"/>
+                            <constraint firstItem="tsn-p3-pd3" firstAttribute="top" secondItem="gL8-Sl-wfr" secondAttribute="bottom" constant="63" id="JOz-Sk-hF9"/>
+                            <constraint firstItem="XBc-oz-wql" firstAttribute="leading" secondItem="m34-NI-eyh" secondAttribute="leading" id="Jq2-bX-DgF"/>
+                            <constraint firstItem="XBc-oz-wql" firstAttribute="top" secondItem="DQm-WR-ISj" secondAttribute="bottom" constant="8" symbolic="YES" id="M2S-Hs-WWG"/>
+                            <constraint firstItem="m34-NI-eyh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PqG-g6-8kc"/>
+                            <constraint firstItem="XBc-oz-wql" firstAttribute="trailing" secondItem="m34-NI-eyh" secondAttribute="trailing" id="SFu-Po-BdY"/>
+                            <constraint firstItem="m34-NI-eyh" firstAttribute="leading" secondItem="tsn-p3-pd3" secondAttribute="leading" id="UTM-ga-438"/>
+                            <constraint firstItem="XBc-oz-wql" firstAttribute="centerX" secondItem="zg7-L2-LmZ" secondAttribute="centerX" id="VIt-Uu-LaL"/>
+                            <constraint firstItem="DQm-WR-ISj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XOc-RT-TYN"/>
+                            <constraint firstItem="zg7-L2-LmZ" firstAttribute="leading" secondItem="gL8-Sl-wfr" secondAttribute="leading" id="a5f-9f-n2l"/>
+                            <constraint firstAttribute="bottom" secondItem="tsn-p3-pd3" secondAttribute="bottom" constant="20" symbolic="YES" id="cAh-0u-0yE"/>
+                            <constraint firstItem="m34-NI-eyh" firstAttribute="top" secondItem="zg7-L2-LmZ" secondAttribute="bottom" constant="44" id="ccl-NJ-Akw"/>
+                            <constraint firstItem="zg7-L2-LmZ" firstAttribute="top" secondItem="XBc-oz-wql" secondAttribute="bottom" constant="8" symbolic="YES" id="qAR-xi-IrI"/>
+                            <constraint firstItem="gL8-Sl-wfr" firstAttribute="top" secondItem="m34-NI-eyh" secondAttribute="bottom" constant="8" symbolic="YES" id="qIq-Db-3UE"/>
+                            <constraint firstItem="zg7-L2-LmZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sIf-01-uBs"/>
+                            <constraint firstAttribute="trailing" secondItem="zg7-L2-LmZ" secondAttribute="trailing" id="yd3-7W-rqC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="card1" destination="zg7-L2-LmZ" id="uJc-Sq-21h"/>
+                        <outlet property="card2" destination="gL8-Sl-wfr" id="2AQ-Q7-A68"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.25" y="111.97183098591549"/>
+        </scene>
+    </scenes>
+</document>
